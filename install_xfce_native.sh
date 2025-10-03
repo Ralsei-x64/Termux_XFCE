@@ -218,12 +218,12 @@ mv dark_waves.png $PREFIX/share/backgrounds/xfce/
 #rm 2023-04-26.zip
 
 # Install Fluent Cursor Icon Theme
-wget https://github.com/vinceliuice/Fluent-icon-theme/archive/refs/tags/2023-02-01.zip
-unzip 2023-02-01.zip
-mv Fluent-icon-theme-2023-02-01/cursors/dist $PREFIX/share/icons/ 
-mv Fluent-icon-theme-2023-02-01/cursors/dist-dark $PREFIX/share/icons/
-rm -rf $HOME//Fluent*
-rm 2023-02-01.zip
+# wget https://github.com/vinceliuice/Fluent-icon-theme/archive/refs/tags/2023-02-01.zip
+# unzip 2023-02-01.zip
+# mv Fluent-icon-theme-2023-02-01/cursors/dist $PREFIX/share/icons/ 
+# mv Fluent-icon-theme-2023-02-01/cursors/dist-dark $PREFIX/share/icons/
+# rm -rf $HOME//Fluent*
+# rm 2023-02-01.zip
 
 # Create xsettings.xml for Termux
 cat <<'EOF' > $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
