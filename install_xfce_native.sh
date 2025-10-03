@@ -210,12 +210,12 @@ wget https://raw.githubusercontent.com/phoenixbyrd/Termux_XFCE/main/dark_waves.p
 mv dark_waves.png $PREFIX/share/backgrounds/xfce/
 
 # Install WhiteSur-Dark Theme
-wget https://github.com/vinceliuice/WhiteSur-gtk-theme/archive/refs/tags/2023-04-26.zip
-unzip 2023-04-26.zip
-tar -xf WhiteSur-gtk-theme-2023-04-26/release/WhiteSur-Dark-44-0.tar.xz
-mv WhiteSur-Dark/ $PREFIX/share/themes/
-rm -rf WhiteSur*
-rm 2023-04-26.zip
+#wget https://github.com/vinceliuice/WhiteSur-gtk-theme/archive/refs/tags/2023-04-26.zip
+#unzip 2023-04-26.zip
+#tar -xf WhiteSur-gtk-theme-2023-04-26/release/WhiteSur-Dark-44-0.tar.xz
+#mv WhiteSur-Dark/ $PREFIX/share/themes/
+#rm -rf WhiteSur*
+#rm 2023-04-26.zip
 
 # Install Fluent Cursor Icon Theme
 wget https://github.com/vinceliuice/Fluent-icon-theme/archive/refs/tags/2023-02-01.zip
@@ -230,8 +230,7 @@ cat <<'EOF' > $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 <?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xsettings" version="1.0">
-  <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="WhiteSur-Dark"/>
+  <property name="Net" type="empty"
     <property name="IconThemeName" type="string" value="Papirus-Dark"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
@@ -264,7 +263,6 @@ cat <<'EOF' > $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
     <property name="DecorationLayout" type="string" value="icon,menu:minimize,maximize,close"/>
     <property name="DialogsUseHeader" type="empty"/>
     <property name="TitlebarMiddleClick" type="empty"/>
-    <property name="ThemeName" type="string" value="WhiteSur-Dark"/>
     <property name="IconThemeName" type="string" value="Papirus-Dark"/>
   </property>
   <property name="Gdk" type="empty">
@@ -281,7 +279,6 @@ cat <<'EOF' > $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
 
 <channel name="xfwm4" version="1.0">
   <property name="general" type="empty">
-    <property name="theme" type="string" value="WhiteSur-Dark"/>
     <property name="title_alignment" type="string" value="center"/>
     <property name="button_layout" type="string" value="O|HMC"/>
     <property name="workspace_count" type="int" value="1"/>
